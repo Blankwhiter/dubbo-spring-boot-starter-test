@@ -1,0 +1,16 @@
+dubbo:
+  application:
+    name:  dubbo-consumer
+  registry:
+    address: 125.77.116.145:2182
+    # 读者请换成自己的zookeeperip
+    protocol: zookeeper
+    check: false
+  monitor:
+    protocol: register
+  consumer:
+    check:  false
+    timeout: 3000
+
+server:
+  port: 8062
